@@ -1,6 +1,6 @@
 ---
 title: "Activity 9"
-author: "Name"
+author: "Alexa Kraklau"
 output: github_document
 ---
 
@@ -14,7 +14,12 @@ In this activity, we will create a function for calculating the range of a numer
 
 To begin, we need `{tidyverse}` and `{gapminder}` (for a dataset to test our functions with) packages loaded.
 
+```{r load packages}
 
+library(tidyverse)
+library(gapminder)
+
+```
 
 
 ## Part I
@@ -60,7 +65,7 @@ smaller_value <- range_results[1]
 diff_values <- larger_value - smaller_value
 
 # could also simply do
-# diff_values <- range_results[2] - range_results[1]
+ diff_values <- range_results[2] - range_results[1]
 ```
 
 Now I see that `gapminder$lifeExp` is the only thing that changes whenever I want to calculate the range so I have an outline for my function!
